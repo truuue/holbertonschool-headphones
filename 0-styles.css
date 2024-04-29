@@ -2,6 +2,7 @@
     /* Colors */
     --font-white: #fff;
     --font-black: #000;
+    --hover-color: #FF6565;
     --button-color: #FF6565;
     --button-hover: opacity(0.9);
 
@@ -55,6 +56,11 @@ header a {
     font-size: var(--small-font-size);
     font-weight: 550;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+header a:hover {
+    color: var(--hover-color);
 }
 
 #text {
