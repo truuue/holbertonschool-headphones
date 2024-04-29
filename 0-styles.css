@@ -53,6 +53,7 @@ header a {
     color: var(--font-white);
     font-family: var(--font-primary);
     font-size: var(--small-font-size);
+    font-weight: 550;
     text-decoration: none;
 }
 
@@ -77,5 +78,3 @@ header img {
     height: 800px;
     margin: auto;
 }
-
-/* nav size 1000px */
