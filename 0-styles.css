@@ -63,13 +63,13 @@ header a:hover {
     color: var(--hover-color);
 }
 
-#text {
+#header-text-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header a.text {
+header a.header-text {
     padding: 0 20px;
 }
 
