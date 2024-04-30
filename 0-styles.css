@@ -90,6 +90,17 @@ header img {
     height: 32px;
 }
 
+/* Tablet version */
+@media (max-width: 768px) {
+    header {
+        max-width: 768px;
+    }
+    
+    #header-container {
+        max-width: 633px;
+    }
+}
+
 /* HERO SECTION 
     ================== */
 
@@ -148,4 +159,15 @@ header img {
     max-height: 44px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
     white-space: nowrap;
+}
+
+/* Tablet version */
+@media (max-width: 768px) {
+    #hero {
+        background: url("images/headphones_hero_1.jpg");
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 800px;
+    }
 }
