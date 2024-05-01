@@ -302,5 +302,7 @@ header img {
         height: 869px;
     }
 
-    #hero-text-container {}
+    #hero-text-container {
+        margin-top: -750px;
+    }
 }
