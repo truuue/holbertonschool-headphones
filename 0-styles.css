@@ -135,6 +135,83 @@ header img {
     .burger-menu-container a:hover {
         color: var(--hover-color);
     }
+
+    #small-icon-handler {
+        display: block;
+        position: absolute;
+        top: 5.5rem;
+        left: 1.8rem;
+        height: 3px;
+        width: 1.5rem;
+        background-color: var(--font-white);
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    #small-icon-handler::before {
+        content: "";
+        display: block;
+        border-top: 3px solid var(--font-white);
+        margin-top: -0.7rem;
+        width: 2.25rem;
+        transition: transform 0.2s;
+    }
+
+    #small-icon-handler::after {
+        content: "";
+        display: block;
+        border-top: 3px solid var(--font-white);
+        margin-top: 1.1rem;
+        width: 2.25rem;
+    }
+
+    #hero-text-container {
+        padding: 32rem 4rem 8rem 4rem;
+    }
+
+    .small-nav {
+        display: none;
+        position: absolute;
+        top: 10vh;
+        right: 4rem;
+        left: 4rem;
+        margin: 2.5rem auto;
+        max-width: 100%;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .small-nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        margin-left: 0rem;
+        font-size: 1.8rem;
+    }
+
+    input#small-icon-btn:checked~.small-nav {
+        display: block;
+    }
+
+    input#small-icon-btn:checked~.hero-infos {
+        padding-top: 40rem;
+    }
+
+    input#small-icon-btn:checked~#small-icon-handler {
+        width: 2.25rem;
+        transform: rotate(45deg);
+    }
+
+    input#small-icon-btn:checked~#small-icon-handler::after {
+        display: none;
+    }
+
+    input#small-icon-btn:checked~#small-icon-handler::before {
+        margin-top: 0;
+        transform: rotate(90deg);
+        transition: transform 0.1s;
+    }
 }
 
 /* HERO SECTION 
