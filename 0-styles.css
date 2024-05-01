@@ -90,6 +90,12 @@ header img {
     height: 32px;
 }
 
+.small-nav,
+#small-icon-handler,
+#small-icon-btn {
+    display: none;
+}
+
 /* Tablet version */
 @media (max-width: 768px) {
     header {
@@ -103,6 +109,32 @@ header img {
 
 /* Mobile version */
 @media (max-width: 375px) {
+    #header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 170px;
+        margin: 0 auto;
+        height: 32px;
+    }
+
+    #header-text-container {
+        display: none;
+    }
+
+    .burger-menu-container a {
+        color: var(--font-white);
+        font-family: var(--font-primary);
+        font-size: var(--small-font-size);
+        font-weight: 550;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .burger-menu-container a:hover {
+        color: var(--hover-color);
+    }
 }
 
 /* HERO SECTION 
