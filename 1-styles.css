@@ -44,7 +44,7 @@
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    font-size: 5rem;
+    font-size: 7rem;
     color: var(--button-color);
     line-height: 1;
 
@@ -378,7 +378,7 @@ header img {
 }
 
 #sample-container {
-    width: 1000px;
+    width: 1100px;
     height: 200px;
     display: flex;
     flex-direction: row;
@@ -430,8 +430,8 @@ header img {
 .sample h2 {
     font-family: var(--font-primary);
     font-size: 18px;
-    font-weight: 600;
-    margin: 10px 0;
+    font-weight: 550;
+    margin: 15px 0;
 }
 
 .sample p {
