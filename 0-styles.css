@@ -114,9 +114,9 @@ header img {
         justify-content: center;
         align-items: center;
         width: 100%;
-        max-width: 170px;
+        max-width: 375px;
         margin: 0 auto;
-        height: 32px;
+        height: 100%;
     }
 
     #header-text-container {
@@ -139,10 +139,11 @@ header img {
     #small-icon-handler {
         display: block;
         position: absolute;
-        top: 5.5rem;
-        left: 1.8rem;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1.5rem;
         height: 3px;
-        width: 1.5rem;
+        width: 1rem;
         background-color: var(--font-white);
         cursor: pointer;
         transition: transform 0.2s;
@@ -153,7 +154,7 @@ header img {
         display: block;
         border-top: 3px solid var(--font-white);
         margin-top: -0.7rem;
-        width: 2.25rem;
+        width: 1.8rem;
         transition: transform 0.2s;
     }
 
@@ -162,7 +163,7 @@ header img {
         display: block;
         border-top: 3px solid var(--font-white);
         margin-top: 1.1rem;
-        width: 2.25rem;
+        width: 1.5rem;
     }
 
     #hero-text-container {
@@ -172,7 +173,7 @@ header img {
     .small-nav {
         display: none;
         position: absolute;
-        top: 10vh;
+        top: 15px;
         right: 4rem;
         left: 4rem;
         margin: 2.5rem auto;
@@ -187,19 +188,16 @@ header img {
         align-items: center;
         list-style: none;
         margin-left: 0rem;
-        font-size: 1.8rem;
+        font-size: 25px;
+        margin: 10px auto;
     }
 
     input#small-icon-btn:checked~.small-nav {
         display: block;
     }
 
-    input#small-icon-btn:checked~.hero-infos {
-        padding-top: 40rem;
-    }
-
     input#small-icon-btn:checked~#small-icon-handler {
-        width: 2.25rem;
+        width: 1.8rem;
         transform: rotate(45deg);
     }
 
