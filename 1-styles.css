@@ -44,8 +44,8 @@
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    font-size: 15rem;
-    color: var(--red-color);
+    font-size: 5rem;
+    color: var(--button-color);
     line-height: 1;
 
     /* Better Font Rendering =========== */
@@ -254,7 +254,7 @@ header img {
 
 #hero {
     background: url("images/headphones_hero_1.jpg");
-    width: 100%;
+    width: 1400px;
     height: 800px;
     margin: auto;
     display: flex;
@@ -379,7 +379,9 @@ header img {
 
 #sample-container {
     width: 1000px;
-    height: 195px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
 }
 
 .holberton_school-icon-ic_sound:before {
@@ -398,16 +400,44 @@ header img {
     content: "\e909";
 }
 
+.holberton_school-icon-ic_sound {
+    width: 95px;
+    height: 65px;
+}
+
+.holberton_school-icon-ic_video {
+    width: 68px;
+    height: 77px;
+}
+
+.holberton_school-icon-ic_music {
+    width: 52px;
+    height: 57px;
+}
+
+.holberton_school-icon-ic_hearing {
+    width: 62px;
+    height: 62px;
+}
+
 .sample {
     width: 210px;
-    height: 180px;
-    margin: 0 10px;
+    height: 200px;
+    margin: 0 50px;
     text-align: center;
 }
 
-.sample-icon {
-    display: flex;
-    justify-content: center;
+.sample h2 {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.sample p {
+    font-family: var(--font-primary);
+    line-height: var(--line-height);
+    font-size: 14px;
 }
 
 /* Tablet version */
@@ -419,5 +449,4 @@ header img {
 }
 
 /* Mobile version */
-@media (max-width: 375px) {
-}
+@media (max-width: 375px) {}
