@@ -442,9 +442,38 @@ header img {
 
 /* Tablet version */
 @media (max-width: 768px) {
+    #what-we-do {
+        background-color: var(--font-white);
+        width: 100%;
+        height: 970px;
+    }
+
+    #what-we-do-text-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sample-container {
+        width: 472px;
+        height: 470px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .holberton_school-icon-ic_video,
+    .holberton_school-icon-ic_music,
+    .holberton_school-icon-ic_sound,
+    .holberton_school-icon-ic_hearing {
+        font-size: 5rem;
+    }
+
     .sample {
-        width: 40%;
-        max-width: 50%;
+        width: 210px;
+        height: 180px;
+        margin: 0;
     }
 }
 
