@@ -591,3 +591,81 @@ header img {
     font-weight: 100;
     line-height: var(--line-height);
 }
+
+/* Tablet version */
+@media (max-width: 768px) {
+    #our-results {
+        width: 100%;
+        height: 876px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #our-results-text-container {
+        margin-top: 40px;
+    }
+
+    .polygon-text-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #polygon-container {
+        width: 460px;
+        height: 425px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-top: 60px;
+    }
+
+    .polygon {
+        width: 190px;
+        height: 190px;
+        margin: 0;
+    }
+}
+
+/* Mobile version */
+@media (max-width: 375px) {
+    #our-results {
+        width: 100%;
+        height: 1491px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #our-results-text-container {
+        margin-top: 40px;
+        width: 315px;
+        height: 335px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #our-results-text-container h1 {
+        width: 280px;
+    }
+
+    #polygon-container {
+        width: 190px;
+        height: 890px;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .polygon {
+        width: 190px;
+        height: 190px;
+        margin: 0;
+    }
+}
