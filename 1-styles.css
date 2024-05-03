@@ -365,8 +365,6 @@ header img {
 
 #what-we-do-text-container h1 {
     font-size: var(--large-font-size);
-    position: relative;
-    left: -50px;
     margin-bottom: 40px;
 }
 
@@ -478,4 +476,41 @@ header img {
 }
 
 /* Mobile version */
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+    #what-we-do {
+        background-color: var(--font-white);
+        width: 100%;
+        height: 1638px;
+    }
+
+    #what-we-do-text-container {
+        max-width: 325px;
+        max-height: 288px;
+    }
+
+    #what-we-do-text-container p {
+        width: 100%;
+        height: 100%;
+    }
+
+    #sample-container {
+        width: 207px;
+        height: 1020px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .holberton_school-icon-ic_video,
+    .holberton_school-icon-ic_music,
+    .holberton_school-icon-ic_sound,
+    .holberton_school-icon-ic_hearing {
+        font-size: 5rem;
+    }
+
+    .sample {
+        width: 210px;
+        height: 190px;
+        margin: 0;
+    }
+}
