@@ -814,6 +814,7 @@ footer {
 
 #logo-container a {
     margin: 0 5px;
+    text-decoration: none;
 }
 
 #logo-container [class^="holberton_school-icon-"],
@@ -829,4 +830,42 @@ footer {
     opacity: 0.35;
     position: relative;
     bottom: -40px;
+}
+
+/* Tablet version */
+@media (max-width: 768px) {
+    footer {
+        width: 100%;
+        height: 249px;
+    }
+
+    #logo-container {
+        width: 668px;
+        height: 32px;
+    }
+}
+
+/* Mobile version */
+@media (max-width: 375px) {
+    footer {
+        width: 100%;
+        height: 249px;
+    }
+
+    #logo-container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo-container img {
+        margin-top: -30px;
+        margin-bottom: 40px;
+    }
+
+    #footer-container p {
+        bottom: 35px;
+    }
 }
