@@ -757,4 +757,9 @@ form {
 }
 
 /* Mobile version */
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+    #contact {
+        width: 100%;
+        height: 613px;
+    }
+}
